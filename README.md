@@ -20,8 +20,9 @@ Perfect as a foundation for in-app assistants, voice triggers, accessibility too
 
 ## 📸 Preview
 
-![DriftyBubble Preview](Ressources/preview.gif)
+![DriftyBubble Preview](Assets/preview.gif)
 
+🕹️ Drag it. Drop it. Love it.
 
 _(If you're viewing this on GitHub, you can check the `Ressources/preview.gif` in the repo for a quick look.)_
 
