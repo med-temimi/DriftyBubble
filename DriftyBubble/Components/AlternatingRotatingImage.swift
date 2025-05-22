@@ -30,7 +30,6 @@ struct AlternatingRotatingImage: View {
         let rounds = Int.random(in: 1...3)
         let rotationAmount: Double = Double(360 * rounds)
         let rotationDuration = Double(rounds * 4)
-        print("-------------- rotationDuration: \(rotationDuration)")
         withAnimation(.easeInOut(duration: rotationDuration)) {
             angle += .degrees(isClockwise ? rotationAmount : -rotationAmount)
         }

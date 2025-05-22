@@ -58,7 +58,7 @@ struct ContentView: View {
 
     func showFunnyToast() {
         let messages = [
-            "🎉 Bubble says: Wheee! 😄",
+            "Wheee! 🎉 😄",
         ]
         toastMessage = messages.randomElement() ?? "Boop!"
         withAnimation {

@@ -33,7 +33,7 @@ struct DriftyBubble: View {
                     AlternatingRotatingImage(imageName: "floatingIcon")
                         .frame(width: 50, height: 50)
                         .padding(0)
-                        .position(dragAmount ?? CGPoint(x: geometry.size.width - 40, y: geometry.size.height - 100))
+                        .position(dragAmount ?? CGPoint(x: geometry.size.width - 45, y: geometry.size.height - 100))
                         .highPriorityGesture(
                             DragGesture()
                                 .onChanged { self.dragAmount = $0.location }
@@ -41,7 +41,7 @@ struct DriftyBubble: View {
                                     var currentPostion = value.location
 
                                     if currentPostion.x > (geometry.size.width / 2) {
-                                        currentPostion.x = geometry.size.width - 40
+                                        currentPostion.x = geometry.size.width - 45
                                     } else {
                                         currentPostion.x = 16
                                     }
@@ -65,8 +65,8 @@ struct DriftyBubble: View {
 }
 
 
-//struct DriftyBubble_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DriftyBubble(onTap: onTap)
-//    }
-//}
+struct DriftyBubble_Previews: PreviewProvider {
+    static var previews: some View {
+        DriftyBubble(onTap: {})
+    }
+}
