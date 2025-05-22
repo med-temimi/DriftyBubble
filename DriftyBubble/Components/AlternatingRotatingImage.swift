@@ -13,7 +13,6 @@ struct AlternatingRotatingImage: View {
     @State private var isClockwise = true
 
     let imageName: String
-    let rotationDuration: Double = 4.0
     let pauseDuration: Double = 0.25
 
     var body: some View {
@@ -28,7 +27,10 @@ struct AlternatingRotatingImage: View {
     }
 
     func startAlternatingRotation() {
-        let rotationAmount: Double = Double(360 * Int.random(in: 1...3))
+        let rounds = Int.random(in: 1...3)
+        let rotationAmount: Double = Double(360 * rounds)
+        let rotationDuration = Double(rounds * 4)
+        print("-------------- rotationDuration: \(rotationDuration)")
         withAnimation(.easeInOut(duration: rotationDuration)) {
             angle += .degrees(isClockwise ? rotationAmount : -rotationAmount)
         }

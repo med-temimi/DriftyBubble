@@ -11,9 +11,9 @@
 		207537EA295C8BF800223E84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207537E9295C8BF800223E84 /* ContentView.swift */; };
 		207537EC295C8BF900223E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207537EB295C8BF900223E84 /* Assets.xcassets */; };
 		207537EF295C8BF900223E84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207537EE295C8BF900223E84 /* Preview Assets.xcassets */; };
-		207537F7295C8C4400223E84 /* ChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207537F6295C8C4400223E84 /* ChatButton.swift */; };
 		207537F9295C8E5C00223E84 /* DriftyBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207537F8295C8E5C00223E84 /* DriftyBubble.swift */; };
 		FA4A96762DDE7CCC00696501 /* preview.gif in Resources */ = {isa = PBXBuildFile; fileRef = FA4A96752DDE7CCC00696501 /* preview.gif */; };
+		FA60B4DD2DDF8BEF007EB96C /* BubbleToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60B4DC2DDF8BEF007EB96C /* BubbleToastView.swift */; };
 		FAD3894C2DDD13C000B2A068 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FAD3894B2DDD13C000B2A068 /* Lottie */; };
 		FAD3894F2DDD16C600B2A068 /* chatbot.json in Resources */ = {isa = PBXBuildFile; fileRef = FAD3894E2DDD16C600B2A068 /* chatbot.json */; };
 		FAD389522DDD1AC600B2A068 /* AlternatingRotatingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD389512DDD1AC600B2A068 /* AlternatingRotatingImage.swift */; };
@@ -25,9 +25,9 @@
 		207537E9295C8BF800223E84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		207537EB295C8BF900223E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		207537EE295C8BF900223E84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		207537F6295C8C4400223E84 /* ChatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatButton.swift; sourceTree = "<group>"; };
 		207537F8295C8E5C00223E84 /* DriftyBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriftyBubble.swift; sourceTree = "<group>"; };
 		FA4A96752DDE7CCC00696501 /* preview.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = preview.gif; sourceTree = "<group>"; };
+		FA60B4DC2DDF8BEF007EB96C /* BubbleToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleToastView.swift; sourceTree = "<group>"; };
 		FAD3894E2DDD16C600B2A068 /* chatbot.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chatbot.json; sourceTree = "<group>"; };
 		FAD389512DDD1AC600B2A068 /* AlternatingRotatingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternatingRotatingImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +85,7 @@
 		207537F5295C8C2800223E84 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				207537F6295C8C4400223E84 /* ChatButton.swift */,
+				FA60B4DC2DDF8BEF007EB96C /* BubbleToastView.swift */,
 				207537F8295C8E5C00223E84 /* DriftyBubble.swift */,
 			);
 			path = View;
@@ -183,10 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				207537F7295C8C4400223E84 /* ChatButton.swift in Sources */,
 				207537F9295C8E5C00223E84 /* DriftyBubble.swift in Sources */,
 				207537EA295C8BF800223E84 /* ContentView.swift in Sources */,
 				207537E8295C8BF800223E84 /* DriftyBubbleApp.swift in Sources */,
+				FA60B4DD2DDF8BEF007EB96C /* BubbleToastView.swift in Sources */,
 				FAD389522DDD1AC600B2A068 /* AlternatingRotatingImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

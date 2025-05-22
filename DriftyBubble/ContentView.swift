@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showToast = false
+    @State private var toastMessage = ""
+
     var body: some View {
         ZStack {
 
             HStack{
                 Spacer()
-                
+
                 VStack {
                     Spacer()
-                    
+
                     VStack {
-                        
                         Text("Drifty Bubble")
                             .font(.largeTitle)
                             .bold()
@@ -26,24 +29,47 @@ struct ContentView: View {
                         Text("🕹️ Drag it. Drop it. Love it.")
                             .multilineTextAlignment(.center)
                     }
-                    
+
                     Spacer()
                 }
-                
+
                 Spacer()
-
-
             }
             .foregroundColor(Color.accentColor)
 
+            // TODO: - Add the floating draggable button
+            DriftyBubble {
+                showFunnyToast()
+            }
 
-                //TODO: - Add the draggable floating button
-                DriftyBubble()
+            VStack {
+                Spacer()
+                if showToast {
+                    BubbleToastView(message: toastMessage)
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                        .padding(.bottom, 20)
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .animation(.easeInOut, value: showToast)
         }
-        .background(
-            Color("systemBackground")
-        
-        )
+        .background(Color("systemBackground"))
+    }
+
+    func showFunnyToast() {
+        let messages = [
+            "🎉 Bubble says: Wheee! 😄",
+        ]
+        toastMessage = messages.randomElement() ?? "Boop!"
+        withAnimation {
+            showToast = true
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            withAnimation {
+                showToast = false
+            }
+        }
     }
 }
 
