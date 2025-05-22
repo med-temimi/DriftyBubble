@@ -1,6 +1,6 @@
 # 🫧 DriftyBubble
 
-**DriftyBubble** is a playful SwiftUI demo that showcases a draggable, floating action bubble — inspired by Siri or Messenger-style buttons. It stays on top of your app’s content and can be moved freely by the user.
+**DriftyBubble** is a playful SwiftUI demo that showcases a draggable, floating action button. It stays on top of your app’s content and can be moved freely by the user.
 
 Perfect as a foundation for in-app assistants, voice triggers, accessibility tools, or just a fun UI element that brings delight to your interface.
 
